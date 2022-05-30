@@ -31,9 +31,9 @@ def predict(fname):
     print(custom[0])
 
     covidPercentage = custom[0][0] * 100
-
+    print(covidPercentage)
     def getResult(covPerc):
-        if (covPerc >= 90):
+        if (covPerc >= 75):
             return 'High Covid'
         elif (covPerc >= 50):
             return 'Low Covid'
